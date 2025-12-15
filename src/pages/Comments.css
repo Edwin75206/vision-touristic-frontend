@@ -1,0 +1,160 @@
+/* ===============================
+   CONTENEDOR GENERAL
+================================ */
+.d-grid.gap-3 {
+  background: #f6f7fb;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.d-grid.gap-3 > .d-flex {
+  background: #ffffff;
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(20, 25, 35, 0.06);
+}
+
+.d-grid.gap-3 h3 {
+  font-weight: 900;
+  color: #1a1f2b;
+}
+
+/* ===============================
+   SELECT + DESCRIPCIÓN
+================================ */
+.form-label {
+  font-weight: 800;
+  color: #1a1f2b;
+}
+
+.form-select {
+  border-radius: 12px;
+  border: 1px solid rgba(20, 25, 35, 0.15);
+  padding: 10px 14px;
+}
+
+.form-select:focus {
+  border-color: #4fbf84;
+  box-shadow: 0 0 0 0.2rem rgba(79, 191, 132, 0.2);
+}
+
+.text-muted.mt-2 {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  border-left: 4px solid #4fbf84;
+  box-shadow: 0 8px 20px rgba(20, 25, 35, 0.05);
+}
+
+/* ===============================
+   FORM COMENTARIO
+================================ */
+form.d-grid {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(20, 25, 35, 0.06);
+}
+
+textarea.form-control,
+input.form-control {
+  border-radius: 12px;
+}
+
+textarea.form-control:focus,
+input.form-control:focus {
+  border-color: #4fbf84;
+  box-shadow: 0 0 0 0.2rem rgba(79, 191, 132, 0.2);
+}
+
+/* ===============================
+   BOTONES
+================================ */
+.btn-success {
+  background: linear-gradient(135deg, #6fdc8c, #4fbf84);
+  border: none;
+  border-radius: 12px;
+  font-weight: 900;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #5ccc7c, #3faa72);
+}
+
+.btn-outline-secondary,
+.btn-outline-primary,
+.btn-outline-danger {
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* ===============================
+   LISTA DE COMENTARIOS
+================================ */
+.list-group {
+  display: grid;
+  gap: 14px;
+}
+
+.list-group-item {
+  border-radius: 16px;
+  border: 1px solid rgba(20, 25, 35, 0.08);
+  box-shadow: 0 10px 30px rgba(20, 25, 35, 0.06);
+  padding: 16px;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-group-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(20, 25, 35, 0.1);
+}
+
+/* AUTOR */
+.list-group-item .fw-semibold {
+  font-weight: 900;
+  color: #1a1f2b;
+}
+
+/* FECHA */
+.list-group-item .text-muted {
+  font-size: 12px;
+}
+
+/* TEXTO COMENTARIO */
+.list-group-item > div:last-child {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #2a2f3a;
+}
+
+/* ===============================
+   EDICIÓN INLINE
+================================ */
+.list-group-item textarea {
+  border-radius: 12px;
+}
+
+.list-group-item textarea:focus {
+  border-color: #4fbf84;
+  box-shadow: 0 0 0 0.2rem rgba(79, 191, 132, 0.2);
+}
+
+/* ===============================
+   ALERTA
+================================ */
+.alert-info {
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .d-grid.gap-3 > .d-flex {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

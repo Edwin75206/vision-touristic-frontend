@@ -1,0 +1,57 @@
+/* Footer contenedor */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #ececec;
+  background: #3F5658;
+  padding: 30px;
+  gap: 60px;
+}
+
+/* Columna izquierda */
+.footer-left {
+  width: 50%;
+}
+
+/* Logo + texto horizontal (mitad y mitad) */
+.footer-left-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo ocupa 50% */
+.footer-logo-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tamaño del logo */
+.footer-logo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* Texto ocupa 50% y alineado a la izquierda */
+.footer-text-box {
+  width: 50%;
+  text-align: left;
+}
+
+/* Línea divisoria vertical */
+.footer-divider {
+  width: 2px;
+  background: #ececec;
+}
+
+/* Columna derecha */
+.footer-right {
+  width: 48%;
+  text-align: left;
+}
+
+.footer-list li {
+  margin: 8px 0;
+}

@@ -1,0 +1,243 @@
+/* ===============================
+   SECCIÓN GENERAL
+================================ */
+.descargar-section {
+  padding: 70px 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.descargar-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo-seccion {
+  font-weight: 900;
+  font-size: 36px;
+  color: #1a1f2b;
+}
+
+.subtitulo-seccion {
+  margin-top: 10px;
+  color: #4b5563;
+  font-size: 16px;
+}
+
+/* ===============================
+   CARD PRINCIPAL
+================================ */
+.descargar-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 18px 45px rgba(20, 25, 35, 0.08);
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.descargar-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* 👉 TEXTO CENTRADO */
+.descargar-texto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.descargar-texto h3 {
+  font-weight: 900;
+  margin-bottom: 14px;
+  color: #1a1f2b;
+}
+
+.descargar-texto p {
+  color: #2a2f3a;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+/* ===============================
+   TEXTO INFORMATIVO
+================================ */
+.descargar-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.descargar-info p {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 18px;
+  line-height: 1.7;
+  box-shadow: 0 12px 30px rgba(20, 25, 35, 0.06);
+  color: #2a2f3a;
+
+  /* 👉 TEXTO CENTRADO */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===============================
+   CTA DESCARGA (VERDE CLARO)
+================================ */
+.descargar-cta {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+
+  /* 👉 COLOR MÁS CLARO */
+  background: linear-gradient(135deg, #33a151, #38885d);
+
+  padding: 28px;
+  border-radius: 24px;
+  color: #ffffff;
+  align-items: center;
+}
+
+.descargar-cta img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* 👉 TEXTO CENTRADO */
+.cta-texto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-texto h3 {
+  font-weight: 900;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.cta-texto p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+/* BOTÓN */
+.btn-descargar {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #ffffff;
+  color: #2e7d32;
+  font-weight: 900;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-descargar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .descargar-card,
+  .descargar-info,
+  .descargar-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo-seccion {
+    font-size: 30px;
+  }
+}
+/* ===== IFRAME CARD ===== */
+.iframe-card{
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  backdrop-filter: blur(10px);
+}
+
+.iframe-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.iframe-title{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.iframe-subtitle{
+  margin: 4px 0 0;
+  opacity: 0.85;
+  font-size: 13px;
+}
+
+.btn-abrir{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(0,0,0,0.25);
+  transition: transform .12s ease, background .12s ease;
+}
+
+.btn-abrir:hover{
+  transform: translateY(-1px);
+  background: rgba(0,0,0,0.35);
+}
+
+/* Responsive 16:9 container */
+.iframe-wrap{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.18);
+}
+
+.iframe-wrap iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.iframe-note{
+  margin: 10px 0 0;
+  font-size: 12px;
+  opacity: 0.8;
+}

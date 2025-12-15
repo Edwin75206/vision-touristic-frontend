@@ -1,0 +1,6 @@
+:root{--vt-max:1100px}
+.container-vt{max-width:var(--vt-max)}
+.card-img-top{object-fit:cover; height:180px}
+.pointer{cursor:pointer}
+.text-muted-small{font-size:.9rem}
+pre{white-space:pre-wrap}
